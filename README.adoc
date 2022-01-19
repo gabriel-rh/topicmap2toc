@@ -1,0 +1,41 @@
+# topicmap2toc
+
+
+.Prerequisites
+
+Install node
+
+
+.Procedure
+
+* Clone the repo
++
+[source,terminal]
+----
+git clone git@github.com:gabriel-rh/topicmap2toc.git
+----
+* Change to the repo directory
++
+[source,terminal]
+----
+cd topicmap2toc
+----
+* Install the needed modules
++
+[source,terminal]
+----
+npm install
+----
+* Set the home folder and docs folder in `index.js`
++
+[source,js]
+----
+let home = "/home/gmcgoldr/";
+let docsFolder = home + "/github/openshift-docs-latest";
+----
+* Run the program:
++
+[source,terminal]
+---- 
+node index.js > toc.yml
+----
